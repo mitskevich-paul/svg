@@ -2,19 +2,13 @@ body {
     background-color: #17202A;
     overflow: hidden;
 }
-div {
-    width: 1920px;
-    height: 1200px;
-    justify-content: center;
-    position: relative;
-}
 svg {
     width: 4000px;
     height: 2000px;
     transform: scale(0.4);
     position: absolute;
-    right: -1000px;
-    bottom: 80%;
+    left: -1100px;
+    top: -560px;
 }
 .cloud-left,
 .cloud-right {
