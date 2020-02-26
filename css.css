@@ -1,0 +1,155 @@
+body {
+    background-color: #17202A;
+    overflow: hidden;
+}
+div {
+    width: 1920px;
+    height: 1200px;
+    justify-content: center;
+    position: relative;
+}
+svg {
+    width: 4000px;
+    height: 2000px;
+    transform: scale(0.4);
+    position: absolute;
+    position: absolute;
+    right: -1000px;
+    bottom: -191px;
+}
+.cloud-left,
+.cloud-right {
+    transition-delay: 5s;
+}
+.headlamp,
+.emblem {
+    transform: rotateY(30deg); 
+    transform-origin: left center; 
+}
+.wheelsecond {
+    transform: rotateY(70deg); 
+    transform-origin: left center; 
+}
+.headlamp {
+    fill: #FFF176;
+}
+svg:hover .headlamp {
+    fill: silver;
+}
+svg:hover .carlights {
+    fill: none;
+}
+svg:hover .window {
+    fill: #FFFF00;
+}
+.yellow {
+    fill: none;
+}
+.red {
+    fill: none;
+}
+svg:hover .yellow {
+    animation-name: flashyellow;
+    animation-delay: 0.4s;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+svg:hover .red {
+    animation-name: flashred;
+    animation-delay: 0.2s;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+svg:hover .cloud-left {
+    animation-name: moveleft;
+    animation-delay: 0.5s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+svg:hover .cloud-right {
+    animation-name: moveright;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+svg:hover .cloud-left-deley {
+    animation-name: moveleft;
+    animation-duration: 5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+svg:hover .cloud-right-deley {
+    animation-name: moveright;
+    animation-duration: 5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+svg:hover .santa {
+    animation-name: santa;
+    animation-duration: 15s;
+    animation-delay: 0.7s;
+    animation-fill-mode: forwards;
+}
+@keyframes santa {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(4000px);
+    }
+}
+@keyframes flashyellow {
+    0% {
+        fill: none;
+    }
+    50% {
+        fill: #FFFF00;
+    }
+    75% {
+        fill: red;
+    }
+    100% {
+        fill: blue;
+    }
+}
+@keyframes flashred {
+    0% {
+        fill: none;
+    }
+    50% {
+        fill: red;
+    }
+    75% {
+        fill: #FFFF00;
+    }
+}
+@keyframes moveleft {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(-2000px);
+    }
+}
+@keyframes moveright {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(2000px);
+    }
+}
+
+.snow {
+	position: fixed;
+	width: 5px;
+	height: 10px; 
+	top: -3px;
+	background-color: #fff; 
+	animation: snow 1.5s linear infinite;
+	border-radius: 1px; 
+} 
+@keyframes snow {
+	to {
+		transform: translate3d(200px, 800px, 0); 
+    }
+}
